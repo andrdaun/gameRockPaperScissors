@@ -1,0 +1,33 @@
+body { text-align: center; }
+.choice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.choice-img { width: 100px; height: 100px; margin: 0 10px; }
+.active { border: 2px solid blue; }
+#spinner, #result-modal { display: none; }
+#result-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.choice-container div {
+  display: flex;
+  flex-direction: column; /* Столбцы для изображения и кнопки */
+  align-items: center; /* Выравнивание элементов столбца по центру */
+  margin: 0 10px; /* Отступы между элементами */
+}
+
+.choice-img {
+  width: 100px; /* Фиксированная ширина */
+  height: 100px; /* Фиксированная высота */
+  margin-bottom: 10px; /* Отступ снизу */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Камень, Ножницы, Бумага</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+<body>
+    <h2>Игра "Камень, Ножницы, Бумага"</h2>
+
+    <div class="choice-container">
+        <div>
+            <img src="/images/rock.png" id="image-камень" class="choice-img" />
+            <button onclick="playGame('камень')">Камень</button>
+        </div>
+        <div>
+            <img src="/images/scissors.png" id="image-ножницы" class="choice-img" />
+            <button onclick="playGame('ножницы')">Ножницы</button>
+        </div>
+        <div>
+            <img src="/images/paper.png" id="image-бумага" class="choice-img" />
+            <button onclick="playGame('бумага')">Бумага</button>
+        </div>
+    </div>
+
+    <div id="spinner">Загрузка...</div>
+    <div id="result-modal"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
